@@ -5,7 +5,7 @@ It showcases my projects, skills, contact info, and theme toggle with smooth ani
 
 ### 🔗 Live Demo
 
-🌐 [durgesh-portfolio.vercel.app](https://durgesh-portfolio.vercel.app)
+🌐🚀 Live Demo: [https://iamdurgesh.vercel.app](https://iamdurgesh.vercel.app)
 
 ### 🧰 Tech Stack
 
