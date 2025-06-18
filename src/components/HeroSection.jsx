@@ -52,7 +52,7 @@ const HeroSection = () => {
           }`}
         >
           <a
-            href="/your-resume.pdf"
+            href="/Durgesh_resume.pdf"
             download
             className="px-8 py-3 rounded-full border border-cyan-400 text-white dark:text-black hover:scale-105 hover:shadow-cyan-400/50 transition-all"
           >
