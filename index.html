@@ -3,15 +3,16 @@
 
 <head>
   <script>
-    const storedTheme = localStorage.getItem("theme");
-    if (!storedTheme) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else if (storedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    (() => {
+      const savedTheme = localStorage.getItem("theme");
+      if (!savedTheme || savedTheme === "dark") {
+        document.documentElement.classList.remove("light");
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+      }
+    })();
   </script>
   <meta name="google-site-verification" content="edXGNME0Ye5DefT1BIZNIT_ODyKD2hhp7YiBA_utP0U" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,7 +38,7 @@
   <meta name="description"
     content="I'm Durgesh Gurjar, a BCA 2nd year student and aspiring frontend developer. Explore my portfolio featuring responsive React projects, interactive UIs, and modern web design using Tailwind CSS, JavaScript, and more.">
   <meta name="keywords"
-    content="Durgesh Gurjar, frontend developer, React developer, JavaScript, portfolio, web development, pipariya, BCA,pipariya web developer, durgesh gurjar,durgesh gurjar bhanpur, bhanpur,durgesh gurjar pipariya developer India">
+    content="Durgesh Gurjar, frontend developer,web developer bhanpur, pg collage pipariya React developer, JavaScript, portfolio, web development, pipariya, BCA,pipariya web developer, durgesh gurjar bhanpur,durgesh gurjar pipariya developer India">
   <meta name="author" content="Durgesh Gurjar" />
   <meta name="robots" content="index, follow" />
 
