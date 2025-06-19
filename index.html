@@ -3,14 +3,20 @@
 
 <head>
   <script>
-    const stored = localStorage.getItem("theme");
-    if (stored === "light") {
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  </script>
+    (function () {
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme === "light") {
+          document.documentElement.classList.remove("dark");
+        } else {
+          document.documentElement.classList.add("dark");
+          if (!theme) localStorage.setItem("theme", "dark");
+        }
+      } catch (e) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>  
   <meta name="google-site-verification" content="edXGNME0Ye5DefT1BIZNIT_ODyKD2hhp7YiBA_utP0U" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="#000000" />
