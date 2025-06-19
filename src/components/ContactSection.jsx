@@ -76,12 +76,6 @@ const ContactSection = () => {
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <i className="fas fa-phone text-purple-400 text-lg"></i>
-                <a href="tel:+918839935490" className="hover:underline">
-                  +91 8839935490
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
                 <i className="fab fa-instagram text-pink-500 text-lg"></i>
                 <a
                   href="https://instagram.com/gurjar_durgesh_88"
