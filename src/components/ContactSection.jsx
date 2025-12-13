@@ -78,12 +78,12 @@ const ContactSection = () => {
               <div className="flex items-center gap-3">
                 <i className="fab fa-instagram text-pink-500 text-lg"></i>
                 <a
-                  href="https://instagram.com/gurjar_durgesh_88"
+                  href="https://instagram.com/gurjar_durgesh_56"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
-                  @gurjar_durgesh_88
+                  @gurjar_durgesh_56
                 </a>
               </div>
               <div className="flex items-center gap-3">
